@@ -1,19 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
+//add settings that don't show on webpage
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Portfolio</title>
-    <link href = "style.css" rel = "stylesheet">
+    
+    //title for tab
+    <title>Portfolio</title> 
+
+    //link css
+    <link href = "style.css" rel = "stylesheet"> 
+    
+    //add favicon
+    <link rel = "shortcut icon" type = "image/png" href = "favicon.png"> 
 </head>
+
+//what you see on the webpage
 <body>
     <h1>Jaehee Jung</h1>
     <p>Hello</p>
-    <img src = "Wrightwood Hike.jpg" alt = "Hiking" width = "300"> <br>
-    <button onclick = "sayHello()">Say HI</button>
+
+    //add pic that can be clicked and put in a class
+    <img class = "clickme" onclick = "hiking()" src = "Wrightwood Hike.jpg" alt = "Hiking" width = "300"> <br> 
+
+    //make a generic button
+    <button class = "clickme" onclick = "sayHello()">Say HI</button>
+
+    //output of js printed here
     <p id = "response"></p>
+
+    //link that opens on a new tab
     <a href = "https://www.linkedin.com/in/jaeheejungengineer/" target = "_blank">LinkedIn</a>
 </body>
+
+//link to js
 <script src = "script.js"></script>
+
 </html>
